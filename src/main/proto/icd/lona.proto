@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+package icd;
+
+option java_package = "com.boo.icdserialisation.lona";
+
+message LonaEvent {
+    optional string name = 1;
+    optional int32 gps_lat = 2;
+    optional int32 gps_lon = 3;
+    optional double server_timestamp = 4;
+}
